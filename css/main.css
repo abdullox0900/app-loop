@@ -643,12 +643,19 @@ img {
   .overview .overview__list {
     margin-left: 0px;
   }
+  .overview .overview__item {
+    text-align: center;
+  }
   .overview .overview__item + .overview__item {
     margin-left: 0px;
     margin-top: 30px;
   }
   .overview .overview__desc {
     max-width: 350px;
+    margin: 0 auto;
+  }
+  .overview .over__snap {
+    display: none;
   }
 }
 

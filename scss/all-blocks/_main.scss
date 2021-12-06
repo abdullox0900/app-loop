@@ -101,6 +101,10 @@
             margin-left: 0px;
         }
 
+        .overview__item {
+            text-align: center;
+        }
+
         .overview__item + .overview__item {
             margin-left: 0px;
             margin-top: 30px;
@@ -108,6 +112,11 @@
 
         .overview__desc {
             max-width: 350px;
+            margin: 0 auto;
+        }
+
+        .over__snap {
+            display: none;
         }
     }
 }
