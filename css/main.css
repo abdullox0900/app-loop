@@ -719,6 +719,7 @@ img {
     height: 450px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    border-bottom: 1px solid #b6b5b6;
   }
 }
 
