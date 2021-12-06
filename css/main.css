@@ -439,7 +439,7 @@ img {
 }
 
 .button:hover {
-  background-color: #e6524a;
+  background-color: #ea625c;
 }
 
 .button:active {
@@ -537,6 +537,119 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.overview {
+  margin-bottom: 75px;
+}
+
+.overview .overview__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overview .overview__item + .overview__item {
+  margin-left: 55px;
+}
+
+.overview .overview__header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.overview .overview__desc {
+  max-width: 250px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #443f3f;
+}
+
+.overview .over__snap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border: none;
+  background-color: #b6b5b6;
+}
+
+.overview .over__snap::before,
+.overview .over__snap::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  margin-left: 10px;
+  background-color: #b6b5b6;
+}
+
+.overview .over__snap::after {
+  margin-left: 20px;
+}
+
+.overview .overview__link {
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ea625c;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: padding 0.4s ease;
+  transition: padding 0.4s ease;
+}
+
+.overview .overview__link:hover {
+  padding-left: 50px;
+}
+
+.overview .overview__link::before {
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #ea625c;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.overview .overview__link:hover::before {
+  width: 35px;
+}
+
+@media only screen and (max-width: 825px) {
+  .overview .overview__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .overview .overview__list {
+    margin-left: 0px;
+  }
+  .overview .overview__item + .overview__item {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .overview .overview__desc {
+    max-width: 350px;
+  }
 }
 
 .hero {

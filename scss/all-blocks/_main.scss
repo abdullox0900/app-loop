@@ -1,3 +1,113 @@
 .main {
     flex-grow: 1;
 }
+
+// OVERVIEW
+
+.overview {
+    margin-bottom: 75px;
+    .overview__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .overview__item + .overview__item {
+        margin-left: 55px;
+    }
+
+    .overview__header {
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 15px;
+        color: $darkgrey;
+        text-transform: uppercase;
+    }
+
+    .overview__desc {
+        max-width: 250px;
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.8;
+        color: $darkel;
+    }
+
+    .over__snap {
+        display: flex;
+        position: relative;
+        width: 4px;
+        height: 4px;
+        border: none;
+        background-color: $grey;
+    }
+
+    .over__snap::before,
+    .over__snap::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        margin-left: 10px;
+        background-color: $grey;
+    }
+
+    .over__snap::after {
+        margin-left: 20px;
+    }
+
+    .overview__link {
+        display: inline-block;
+        position: relative;
+        padding-left: 45px;
+        font-size: 12px;
+        font-weight: 700;
+        color: $redel;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: padding 0.4s ease;
+    }
+
+    .overview__link:hover {
+        padding-left: 50px;
+    }
+
+    .overview__link::before {
+        position: absolute;
+        top: 45%;
+        left: 0px;
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: $redel;
+        transition: width 0.5s ease;
+    }
+
+    .overview__link:hover::before {
+        width: 35px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .overview {
+        .overview__list {
+            flex-direction: column;
+        }
+
+        .overview__list {
+            margin-left: 0px;
+        }
+
+        .overview__item + .overview__item {
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+
+        .overview__desc {
+            max-width: 350px;
+        }
+    }
+}
