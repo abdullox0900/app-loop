@@ -1,0 +1,55 @@
+.wach {
+    .wach__header {
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .wach__desc {
+        max-width: 420px;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #b6b5b6;
+        border-left: 2px solid #b6b5b6;
+    }
+}
+
+// TABLET RESPONSIV
+@media only screen and (max-width: 768px) {
+    .wach {
+        text-align: center;
+
+        .wach__desc {
+            padding-left: 0px;
+            border-left: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wach {
+        .wach__header {
+            margin-bottom: 35px;
+        }
+
+        .wach__desc {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// MOBILE RESPONSIV
+@media only screen and (max-width: 375px) {
+    .wach {
+        .wach__header {
+            margin-bottom: 24px;
+        }
+
+        .wach__desc {
+            margin-bottom: 20px;
+        }
+    }
+}
