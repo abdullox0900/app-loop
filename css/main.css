@@ -755,6 +755,61 @@ img {
   }
 }
 
+.footer {
+  padding: 200px 0px;
+  background-image: url("../img/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .wach-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer .wach .wach__header {
+  color: #ffffff;
+}
+
+.footer .wach .wach__desc {
+  max-width: 399px;
+  color: #ffffff;
+  border-left: 2px solid #fff;
+}
+
+@media only screen and (max-width: 840px) {
+  .footer {
+    padding: 130px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 90px 0px;
+  }
+  .footer .wach {
+    margin: 0 auto;
+  }
+  .footer .wach .wach__desc {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding: 80px 0px;
+  }
+}
+
 .wach .wach__header {
   margin: 0;
   margin-bottom: 40px;
